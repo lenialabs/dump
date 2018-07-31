@@ -1,0 +1,8 @@
+{
+    "name": "dump",
+    "description": "a PHP replacement of var_dump()",
+    "type": "project",
+    "license": "",
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
