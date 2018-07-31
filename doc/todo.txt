@@ -1,0 +1,4 @@
+@todo
+
+ [done]     que se puedan mostrar varias variables
+            ejemplo: dump(1, 2, 3, 4)
