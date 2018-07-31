@@ -5,7 +5,7 @@
 
  ------------------------------------------------------------------------------
 
-            podria evolucionar a un tracer:
+            podria evolucionar a un tracer / debugger
             ...
             $this->getservicecontainer('tracer')->add($var1);
             ...
