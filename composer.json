@@ -1,8 +1,18 @@
 {
-    "name": "dump",
+    "name": "lenialabs/dump",
+    "type": "library",
     "description": "a PHP replacement of var_dump()",
-    "type": "project",
-    "license": "",
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    "keywords": ["dump", "var_dump", "var_export"],
+    "homepage": "https://github.com/lenialabs/dump",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Ricardo Ruiz",
+            "email": "lenia.labs@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    }
 }
