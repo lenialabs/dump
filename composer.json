@@ -2,7 +2,7 @@
     "name": "lenialabs/dump",
     "type": "library",
     "version": "0.1.1",
-    "description": "A PHP replacement of var_dump().",
+    "description": "A PHP replacement of var_dump()",
     "keywords": ["dump", "var_dump", "var_export"],
     "homepage": "https://github.com/lenialabs/dump",
     "license": "GPL-3.0-or-later",
