@@ -2,3 +2,29 @@
 
  [done]     que se puedan mostrar varias variables
             ejemplo: dump(1, 2, 3, 4)
+
+ ------------------------------------------------------------------------------
+
+            podria evolucionar a un tracer:
+            ...
+            $this->getservicecontainer('tracer')->add($var1);
+            ...
+            $this->getservicecontainer('tracer')->add($var2);
+            ...
+            y luego vuelca los valores en un div visible o en metas
+            (
+                en el evento finish de Zend hacemos un replace de </head>:
+                por:
+                <script type="text/javascript">
+                    .tracer {
+                        position: absolute;
+                        z-index: 10000;
+                        ...
+                    }
+                </script>
+                </head>
+
+                y en body:
+                <body>
+                    <div class="tracer">...y aqui el contenido de la traza...</div>
+                </body>
