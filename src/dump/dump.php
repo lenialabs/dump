@@ -4,9 +4,9 @@
 /**
  *
  * dump 0.1
- * A PHP replacement of var_dump().
+ * A PHP replacement of var_dump()
  *
- * by Lenia Labs
+ * by LeniaLabs
  *
  *
  * 0.1      2018-07-31 init
