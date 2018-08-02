@@ -8,6 +8,10 @@
             si hay una excepcion que muestre los codigos, mensajes y ficheros
             de la excepcion y de las excepciones previas
 
+-------------------------------------------------------------------------------
+
+            IMPORTANTE: otro metodo que sea trace(), otro dumptrace()
+
  ------------------------------------------------------------------------------
 
             podria evolucionar a un tracer / debugger

@@ -60,13 +60,23 @@ function dump ()
                 echo $html_type_suffix;
             }
         } elseif (is_object($var)) {
-            echo $html_type_prefix . 'object ' . get_class($var) . '(' . count(get_class_methods($var)) . ')' . $html_type_suffix;
+            echo $html_type_prefix . 'object ' . get_class($var) . '(' . count(get_class_methods($var)) . ' methods)' . $html_type_suffix;
             $methods = get_class_methods($var);
             sort($methods);
             array_walk($methods, function(&$value, $key) {
                 $value = $value . '()';
             });
             echo ' ' . $html_value_prefix . implode(' ', $methods) . $html_value_suffix;
+            // exceptions
+            if (substr(get_class($var), -9) == 'Exception' && method_exists($var, 'getPrevious')) {
+                echo '<br />';
+                $exception = $var;
+                do {
+                    echo 'Exception: ' . $exception->getMessage() . '<br />';
+                    echo 'File(Line): ' . $exception->getFile() . '(' . $exception->getLine() . ')<br />';
+                    $previous = $exception->getPrevious();
+                } while ($previous);
+            }
         } elseif (is_resource($var)) {
             echo $html_type_prefix . 'resorce' . $html_type_suffix . ' ' . $html_value_prefix . get_resource_type($var) . $html_value_suffix;
         }
