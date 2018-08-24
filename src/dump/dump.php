@@ -9,8 +9,9 @@
  * by LeniaLabs
  *
  *
- * 0.1      2018-07-31 init
- * 0.1.1    2018-07-31 added file and line
+ * @version 0.1      2018-07-31 init
+ * @version 0.1.1    2018-07-31 added file and line
+ * @version 0.1.2    2018-08-24 added pdump()
  */
 
 
@@ -82,5 +83,14 @@ function dump ()
         }
         echo '</div>';
     }
+    die();
+}
+
+
+function pdump ($var)
+{
+    echo '<pre>';
+    var_dump($var);
+    echo '</pre>';
     die();
 }
